@@ -1,4 +1,4 @@
-add_executable(demo_5 random_point_2d_delaunay.cpp)
+add_executable(demo_5_0 random_point_2d_delaunay.cpp)
 
-target_link_libraries(demo3_0 ${CGAL_LIBS})
+target_link_libraries(demo_5_0 ${CGAL_LIBS})
 
