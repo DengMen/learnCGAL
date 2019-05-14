@@ -15,3 +15,5 @@ add_subdirectory(demo_3)
 add_subdirectory(demo_4)
 
 add_subdirectory(demo_5)
+
+add_subdirectory(demo_7)
