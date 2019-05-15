@@ -36,5 +36,6 @@ int main()
 	  std::cout << "None intersection!" << std::endl;
   }
 
+  system("pause");
   return 0;
 }

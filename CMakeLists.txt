@@ -32,4 +32,6 @@ add_subdirectory(demo_2)
 add_subdirectory(demo_3)
 add_subdirectory(demo_5)
 add_subdirectory(demo_6)
+add_subdirectory(demo_7)
+add_subdirectory(demo_8)
 >>>>>>> e156a20277f93bbb862bdb783f0568ad7dea7c2b

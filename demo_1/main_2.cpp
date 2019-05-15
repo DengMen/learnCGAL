@@ -9,7 +9,7 @@ typedef K::Point_2 Point_2;
 typedef K::Line_2 Line_2;
 typedef K::Intersect_2 Intersect_2;
 
-int main()
+int mainfsdg()
 {
   Line_2 lina(1,1,2);
   Line_2 linb(1,-1,1);
@@ -20,5 +20,6 @@ int main()
     const Point_2* p = boost::get<Point_2 >(&*result);
     std::cout << *p << std::endl;
   }
+  system("pause");
   return 0;
 }
