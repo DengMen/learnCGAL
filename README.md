@@ -11,8 +11,10 @@ Demo
 5. [随机生成10个二维点，并用Delaunay构网 (C)](https://github.com/DengMen/learnCGAL/tree/master/demo_5)
 6. [随机生成两个三角形，并求出相交的多边形(Q)](https://github.com/DengMen/learnCGAL/tree/master/demo_6)
 7. [求两个四边形的交、并结果（Y）](https://github.com/DengMen/learnCGAL/tree/master/demo_7)
-8. 遍历Delaunay的顶点、边和面（C）
+8. [遍历Delaunay的顶点、边和面（C）](https://github.com/DengMen/learnCGAL/tree/master/demo_8)
 9. 求两个四面体的交、并结果（Q）
+10. 判断一条二维直线与二维Delaunay的交点数量（C）
+11. 构造一个六面体（Y）
 
 People
 ---
