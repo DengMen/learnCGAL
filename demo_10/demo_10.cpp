@@ -10,8 +10,9 @@
 #include<CGAL/Delaunay_triangulation_2.h>
 #include <CGAL/intersections.h>
 
-#define CGAL_USE_BASIC_VIEWER
+#ifdef CGAL_USE_BASIC_VIEWER	
 #include <CGAL/draw_triangulation_2.h>
+#endif
 
 using namespace CGAL;
 
@@ -41,7 +42,7 @@ int main() {
 	dt.insert(points.begin(), points.end());
 	
 
-	//任意生成二维平面两个点构成一条直线
+	//锟斤拷锟斤拷锟斤拷锟缴讹拷维平锟斤拷锟斤拷锟斤拷锟姐构锟斤拷一锟斤拷直锟斤拷
 	Vector lpoints;
 	lpoints.reserve(2);
 
@@ -55,7 +56,7 @@ int main() {
 	std::vector<Segment> tri_edges;
 
 
-	//遍历边，边构成线段
+	//锟斤拷锟斤拷锟竭ｏ拷锟竭癸拷锟斤拷锟竭讹拷
 	std::cout << "Edges are:" << std::endl;
 	for (Edge_iterator eg = dt.edges_begin(); eg != dt.edges_end(); eg++) {
 		Vertex_handle f_v1 = eg->first->vertex(dt.cw(eg->second));
@@ -67,7 +68,7 @@ int main() {
 		tri_edges.push_back(temp_l);
 	}
 	
-	//求直线与每条边线段的交点
+	//锟斤拷直锟斤拷锟斤拷每锟斤拷锟斤拷锟竭段的斤拷锟斤拷
 	std::cout << "intersection points are:" << std::endl;
 	int intersection_number = 0;
 	for (int i = 0; i < tri_edges.size(); i++) {

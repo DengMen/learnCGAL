@@ -9,7 +9,7 @@ typedef K::Point_2 Point_2;
 typedef K::Line_2 Line_2;
 typedef K::Intersect_2 Intersect_2;
 
-int mainfsdg()
+int main()
 {
   Line_2 lina(1,1,2);
   Line_2 linb(1,-1,1);

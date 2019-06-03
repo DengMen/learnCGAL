@@ -9,8 +9,9 @@
 #include <CGAL/Exact_predicates_exact_constructions_kernel.h>
 #include<CGAL/Delaunay_triangulation_2.h>
 
-#define CGAL_USE_BASIC_VIEWER
+#ifdef CGAL_USE_BASIC_VIEWER
 #include <CGAL/draw_triangulation_2.h>
+#endif
 
 using namespace CGAL;
 
@@ -36,14 +37,14 @@ int main() {
 
 	dt.insert(points.begin(), points.end());
 
-	//±éÀú¶¥µã
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	std::cout << "Vertices are:" << std::endl;
 	for (Vertex_iterator vc = dt.vertices_begin(); vc != dt.vertices_end(); vc++) {
 		Point p = vc->point();
 		std::cout << "(" << p.x() << "," << p.y() << ")" << std::endl;
 	}
 
-	//±éÀú±ß
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	std::cout << "Edges are:" << std::endl;
 	for (Edge_iterator eg = dt.edges_begin(); eg != dt.edges_end(); eg++) {
 		for (int i = 0; i < 2; i++) {
@@ -56,13 +57,13 @@ int main() {
 		
 	}
 
-	//±éÀúÈý½ÇÃæ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	std::cout << "Faces are:" << std::endl;
 	for (Face_iterator fa = dt.faces_begin(); fa != dt.faces_end(); fa++) {
-		//Ò»ÆðÊä³öÈý½ÇÐÎÈý¸ö¶¥µãµÄxy×ø±ê
+		//Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xyï¿½ï¿½ï¿½ï¿½
 		//std::cout <<dt.triangle(fa)<< std::endl;
 		
-		//Èç¹ûµ¥¶À·ÃÎÊÃæµÄÃ¿¸ö¶¥µã¾ÍÒªÓÃvertex()£¬x×ø±êÒªÓÃhx(),y×ø±êÒªÓÃhy()
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½vertex()ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½hx(),yï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½hy()
 		//std::cout << dt.triangle(fa).vertex(0).hx() << " " << dt.triangle(fa).vertex(0).hy() << std::endl;
 
 		for (int i = 0; i < 3; i++) {
@@ -71,8 +72,10 @@ int main() {
 		}
 		std::cout<<std::endl;
 	}
-	CGAL::draw(dt);
 
+#ifdef CGAL_USE_BASIC_VIEWER	
+	CGAL::draw(dt);
+#endif
 
 
 	return EXIT_SUCCESS;
