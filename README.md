@@ -13,8 +13,10 @@ Demo
 7. [求两个四边形的交、并结果（Y）](https://github.com/DengMen/learnCGAL/tree/master/demo_7)
 8. [遍历Delaunay的顶点、边和面（C）](https://github.com/DengMen/learnCGAL/tree/master/demo_8)
 9. 求两个四面体的交、并结果（Q）
-10. 判断一条二维直线与二维Delaunay的交点数量（C）
-11. 构造一个六面体（Y）
+10. [判断一条二维直线与二维Delaunay的交点数量（C）](https://github.com/DengMen/learnCGAL/tree/master/demo_10)
+11. [构造一个六面体（Y）](https://github.com/DengMen/learnCGAL/tree/master/demo_11)
+12. 将Delaunay三角网转换成普通表面模型,并进行编辑（Y）
+13. 构建三维Delaunay，并判断一条射线与其交点（C）
 
 People
 ---
