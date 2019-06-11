@@ -1,15 +1,14 @@
 //https://doc.cgal.org/latest/Polyhedron/Polyhedron_2polyhedron_prog_cube_8cpp-example.html
 //https://doc.cgal.org/latest/Polyhedron/classCGAL_1_1Polyhedron__3_1_1Halfedge.html
 //https://doc.cgal.org/latest/Polyhedron/classCGAL_1_1Polyhedron__3.html
-
+#define CGAL_USE_BASIC_VIEWER
 #include <CGAL/Simple_cartesian.h>
 #include <CGAL/Polyhedron_3.h>
 #include <iostream>
 #include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 #include <CGAL/IO/Polyhedron_iostream.h>
-#ifdef CGAL_USE_BASIC_VIEWER	
 #include <CGAL/draw_polyhedron.h>
-#endif
+
 typedef CGAL::Simple_cartesian<double>     Kernel;
 typedef CGAL::Polyhedron_3<Kernel>         Polyhedron;
 typedef Polyhedron::Halfedge_handle        Halfedge_handle;
@@ -46,9 +45,9 @@ int main()
 {
     Polyhedron P;
     Halfedge_handle h = make_cube_3( P);
-#ifdef CGAL_USE_BASIC_VIEWER	
+
 	CGAL::draw(P);
-#endif
+
     return (P.is_tetrahedron(h) ? 1 : 0);
 
 

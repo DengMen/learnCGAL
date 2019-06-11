@@ -9,9 +9,9 @@
 #include <CGAL/Exact_predicates_exact_constructions_kernel.h>
 #include<CGAL/Delaunay_triangulation_2.h>
 
-#ifdef CGAL_USE_BASIC_VIEWER
-#include <CGAL/draw_triangulation_2.h>
-#endif
+// #ifdef CGAL_USE_BASIC_VIEWER
+// #include <CGAL/draw_triangulation_2.h>
+// #endif
 
 using namespace CGAL;
 
@@ -73,9 +73,10 @@ int main() {
 		std::cout<<std::endl;
 	}
 
-#ifdef CGAL_USE_BASIC_VIEWER	
-	CGAL::draw(dt);
-#endif
+// #ifdef CGAL_USE_BASIC_VIEWER	
+    
+// 	CGAL::draw(dt);
+// #endif
 
 
 	return EXIT_SUCCESS;
