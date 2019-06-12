@@ -34,7 +34,6 @@ int main()
 	std::cout << "(" << lpoints[0].x() << "," << lpoints[0].y() << "," << lpoints[0].z() << ")" << "(" << lpoints[1].x() << "," << lpoints[1].y()  << "," << lpoints[0].z()<< ")" << std::endl;
 	Line l(lpoints[0], lpoints[1]);
 
-	std::vector<Point> intersect_points;
 	std::cout << "intersection points are:" << std::endl;
 	int intersection_number = 0;
 	for (Facets_iterator face_iter = dt3.facets_begin(); face_iter != dt3.facets_end(); face_iter++) {
@@ -46,7 +45,6 @@ int main()
 			const Point* p = boost::get<Point>(&*result);
 			std::cout << *p << std::endl;
 			intersection_number++;
-			intersect_points.push_back(*p);
 		}
 	}
 	std::cout << "intersection points number is:" << intersection_number << std::endl;
