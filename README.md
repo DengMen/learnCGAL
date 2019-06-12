@@ -18,7 +18,7 @@ Demo
 12. [将二维Delaunay三角网转换成普通表面模型,并进行编辑（Y）](https://github.com/DengMen/learnCGAL/tree/master/demo_12)
 13. 构建三维Delaunay，并判断一条射线与其交点（C）
 14. 学习CGAL::draw()相关函数（Y）
-15. 基于openMesh读取obj,ply，并转成off格式（）
+15. 基于openMesh读取obj,ply，并转成off格式（Z）
 
 People
 ---
