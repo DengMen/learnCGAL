@@ -15,11 +15,11 @@ Demo
 9. 求两个四面体的交、并结果（Q）
 10. [判断一条二维直线与二维Delaunay的交点数量（C）](https://github.com/DengMen/learnCGAL/tree/master/demo_10)
 11. [构造一个六面体（Y）](https://github.com/DengMen/learnCGAL/tree/master/demo_11)
-12. [将二维Delaunay三角网转换成普通表面模型,并进行编辑（Y）](https://github.com/DengMen/learnCGAL/tree/master/demo_12)
-13. 构建三维Delaunay，并判断一条射线与其交点（C）
-14. 学习CGAL::draw()相关函数（Y）
+12. [将二维Delaunay三角网转换成普通表面模型（Y）](https://github.com/DengMen/learnCGAL/tree/master/demo_12)
+13. [构建三维Delaunay，并判断一条射线与其交点（C）](https://github.com/DengMen/learnCGAL/tree/master/demo_13)
+14. 将san维Delaunay三角网转换成mesh（Y）
 15. 基于openMesh读取obj,ply，并转成off格式（Z）
-
+16. Poisson Surface Reconstruction(C)
 People
 ---
 Yan Qingsong
