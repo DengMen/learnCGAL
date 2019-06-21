@@ -41,7 +41,7 @@ typename Poly::Halfedge_handle make_cube_3( Poly& P) {
     return h;
 }
 
-int main1() 
+int main() 
 {
     Polyhedron P;
     Halfedge_handle h = make_cube_3( P);
